@@ -58,7 +58,6 @@ body {
 .nav-links {
     display: flex;
     gap: 2rem;
-
     list-style: none;
 }
 
@@ -66,13 +65,15 @@ body {
     text-decoration: none;
     color: var(--text);
     padding: 8px 12px;
-    border-radius: 8px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
     transition: all 0.2s ease;
 }
 
 .nav-links a:hover {
     background: var(--surface);
-    color: var(--accent);
+    border-color: var(--border);
+    transform: translateY(-1px);
 }
 
 
@@ -295,4 +296,31 @@ body {
 
 .info-card a:hover {
     color: var(--accent);
+}
+
+
+.languages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.language-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    width: 220px;
+    padding: 10px 12px;
+}
+
+.language-name {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.language-level {
+    color: var(--muted);
+    font-size: 14px;
 }
