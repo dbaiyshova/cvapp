@@ -84,6 +84,12 @@ body {
 }
 
 
+.nav-links a.active {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
 .hero {
     padding: 120px 0;
 }
@@ -323,4 +329,8 @@ body {
 .language-level {
     color: var(--muted);
     font-size: 14px;
+}
+
+section {
+    scroll-margin-top: 30px;
 }
