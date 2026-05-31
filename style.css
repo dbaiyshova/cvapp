@@ -196,3 +196,10 @@ body {
 
     cursor: pointer;
 }
+
+
+
+#form-status {
+    margin-top: 12px;
+    color: var(--accent);
+}
