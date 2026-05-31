@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta name="robots" content="noindex, nofollow">
-  <title>CV App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>[YOUR NAME] | Portfolio</title>
+
+  <meta name="description" content="[SHORT DESCRIPTION]">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Welcome</h1>
-  <p>This page will be filled soon...</p>
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">[LOGO]</div>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+
+        <p class="hero-tag">
+          Data Analyst • Data Engineer • Data Scientist
+        </p>
+
+        <h1>
+          Hi, I'm D
+        </h1>
+
+        <p class="hero-description">
+          [SHORT PROFESSIONAL INTRODUCTION]
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button-primary">
+            View Projects
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+
+        <p>
+          [ABOUT SECTION PLACEHOLDER]
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Airflow</span>
+          <span>Docker</span>
+          <span>PostgreSQL</span>
+          <span>Oracle</span>
+          <span>Git</span>
+          <span>Data Vault</span>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <h3>[PROJECT NAME]</h3>
+
+            <p>
+              [PROJECT DESCRIPTION]
+            </p>
+
+            <a href="#">GitHub →</a>
+          </article>
+
+          <article class="project-card">
+            <h3>[PROJECT NAME]</h3>
+
+            <p>
+              [PROJECT DESCRIPTION]
+            </p>
+
+            <a href="#">GitHub →</a>
+          </article>
+          <article class="project-card">
+            <h3>[PROJECT NAME]</h3>
+
+            <p>
+              [PROJECT DESCRIPTION]
+            </p>
+
+            <a href="#">GitHub →</a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+
+        <h2>Contact</h2>
+
+        <form class="contact-form" action="https://formspree.io/f/xredvany" method="POST">
+
+          <input type="text" name="name" placeholder="Your name" required>
+
+          <input type="email" name="email" placeholder="Your email" required>
+
+          <input type="text" name="_subject" placeholder="Portfolio Website Inquiry" value="Portfolio Website Inquiry">
+
+          <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+
+          <button type="submit">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
 </body>
+
 </html>
