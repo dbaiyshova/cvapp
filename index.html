@@ -8,6 +8,8 @@
   <title>Portfolio | Danizat Baiyshova</title>
 
   <meta name="description" content="[SHORT DESCRIPTION]">
+  <meta name="author" content="Danizat Baiyshova">
+  <meta name="copyright" content="© 2026 Danizat Baiyshova">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -266,32 +268,13 @@
         </div>
     </section>
 
+    <footer class="footer">
+      <p>© 2026 Danizat Baiyshova. All rights reserved.</p>
+    </footer>
+
   </main>
 
-  <script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-links a");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
-        const sectionHeight = section.clientHeight;
-
-        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
